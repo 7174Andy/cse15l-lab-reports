@@ -30,6 +30,18 @@ Before starting to connect remotely through VS Code terminal, **Window** users m
 
 [Set up Git for Windows](https://gitforwindows.org/)
 
-**Mac** users, don't worry. 'git' is already built in your terminal. 
+**Mac** users, don't worry. `git` is already built in your terminal. 
 
-After setting up 'git', open a terminal in Visual Studio Code (Ctrl or Command + `). 
+After setting up `git`, open a terminal in Visual Studio Code (Ctrl or Command + `). Type the following command in the terminal and replace `ab` with the letters in your username and press enter: 
+
+`$ ssh cs15lsp23ab@ieng6.ucsd.edu`
+
+You **should not** type `$` in your terminal because it is just to notify people how to wirte commands. 
+
+WHen it is your first time connecting remotely, this message will be printed: 
+
+`The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?`
+
+Do not get panic and just type "yes". This suppose to happen. 
