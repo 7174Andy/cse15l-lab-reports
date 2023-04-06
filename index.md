@@ -38,12 +38,31 @@ After setting up `git`, open a terminal in Visual Studio Code (Ctrl or Command +
 
 You **should not** type `$` in your terminal because it is just to notify people how to wirte commands. 
 
-WHen it is your first time connecting remotely, this message will be printed: 
+When it is your first time connecting remotely, this message will be printed: 
 ```
-#code block
 The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
 RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ```
 
-Do not get panic and just type "yes". This suppose to happen. 
+Do not get panic and just type "yes" and press enter. Then, you will see this output: 
+```
+# Now on remote server
+quota: No filesystem specified.
+Hello cs15lsp23ab, you are currently logged into ieng6-203.ucsd.edu
+
+You are using 0% CPU on this system
+
+Cluster Status 
+Hostname     Time    #Users  Load  Averages  
+ieng6-201   23:25:01   0  0.08,  0.17,  0.11
+ieng6-202   23:25:01   1  0.09,  0.15,  0.11
+ieng6-203   23:25:01   1  0.08,  0.15,  0.11
+
+Thu Apr 06, 2023 8:28am - Prepping cs15lsp23
+```
+Here is a screenshot of a successful output: 
+
+![Image](SuccessfulOutput.png)
+
+If you see this output in the termial, you have successfully connected remotely to the computer in the CSE Building basement. Now, the basement computers are _server_ and your computer is _client_. 
