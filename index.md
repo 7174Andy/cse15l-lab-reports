@@ -14,7 +14,15 @@ Click "Global Password Change Tool" in the box and follow the instructions to ch
 You are done setting up your CSE 15L Account!
 
 ## Step 2: Install Visual Studio Code
-To download VS Code, visit this link: 
+To download VS Code, visit this link and follow the instructions for installation: 
 
 [Download VS Code](https://code.visualstudio.com/download)
 
+VS Code is also installed in all the computers in the lab, so personal laptops are not required in this lab. 
+
+When you first start VS Code, the window will look like this: 
+
+
+![Image](VSCodeScreen.png)
+
+## Step 3: Use Terminal to Connect Remotely
