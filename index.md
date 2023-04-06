@@ -14,3 +14,7 @@ Click "Global Password Change Tool" in the box and follow the instructions to ch
 You are done setting up your CSE 15L Account!
 
 ## Step 2: Install Visual Studio Code
+To download VS Code, visit this link: 
+
+[Download VS Code](https://code.visualstudio.com/download)
+
