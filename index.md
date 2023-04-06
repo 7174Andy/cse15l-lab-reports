@@ -73,8 +73,12 @@ You can exit the remote environment by Command or Ctrl + D, or you can type `exi
 In your remote environment, you can still use the commands you usually on your computer, such as `cd`, `ls`, and others. When you first connect to the remote environment, your `pwd` is `/home/linux/ieng6/cs15lsp23/cs15lsp23zzz`. `zzz` is the letters in your usernames.
 
 * You can view the list of files and folders using `ls`.
+
 ![Image](ls.png)
+
 * You can view the list of **all** files using `ls -a`.
-![Image](ls -a.png)
+
+![Image](ls-a.png)
+
 * You can move through directories using `cd <directory>`.
 * You can print the contents of a file using `cat`. 
