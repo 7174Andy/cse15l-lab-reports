@@ -26,3 +26,10 @@ When you first start VS Code, the window will look like this:
 ![Image](VSCodeScreen.png)
 
 ## Step 3: Use Terminal to Connect Remotely
+Before starting to connect remotely through VS Code terminal, **Window** users must install and set up `git bash` in Visual Studio Code. Follow the instructions and set up 'git bash' through this link: 
+
+[Set up Git for Windows](https://gitforwindows.org/)
+
+Mac users, don't worry. 'git' is already built in your terminal. 
+
+After setting up 'git', open a terminal in Visual Studio Code (Ctrl or Command + `)
