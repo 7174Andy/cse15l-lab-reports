@@ -30,6 +30,6 @@ Before starting to connect remotely through VS Code terminal, **Window** users m
 
 [Set up Git for Windows](https://gitforwindows.org/)
 
-Mac users, don't worry. 'git' is already built in your terminal. 
+**Mac** users, don't worry. 'git' is already built in your terminal. 
 
-After setting up 'git', open a terminal in Visual Studio Code (Ctrl or Command + `)
+After setting up 'git', open a terminal in Visual Studio Code (Ctrl or Command + `). 
