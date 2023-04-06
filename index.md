@@ -7,4 +7,4 @@ Go to this website to set or reset your password for your CSE 15L account:
 
 First, log in with your UCSD email username and your student PID. Then, you will see "Additional Accounts" below your username. Click cs15l account, and you see a box saying: "Let's set the password for your account."
 
-![Image](Reset Password.png)
+![Image](ResetPassword.png)
