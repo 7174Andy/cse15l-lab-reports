@@ -23,7 +23,7 @@ VS Code is also installed in all the computers in the lab, so personal laptops a
 When you first start VS Code, the window will look like this: 
 
 
-![Image](VSCodeScreen.png)
+![Image](VSCodeScree.png)
 
 ## Step 3: Use Terminal to Connect Remotely
 Before starting to connect remotely through VS Code terminal, **Window** users must install and set up `git bash` in Visual Studio Code. Follow the instructions and set up 'git bash' through this link: 
