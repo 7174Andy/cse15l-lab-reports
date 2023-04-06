@@ -32,7 +32,7 @@ Before starting to connect remotely through VS Code terminal, **Window** users m
 
 **Mac** users, don't worry. `git` is already built in your terminal. 
 
-After setting up `git`, open a terminal in Visual Studio Code (Ctrl or Command + `). Type the following command in the terminal and replace `ab` with the letters in your username and press enter: 
+After setting up `git`, open a terminal in Visual Studio Code (Under "Terminal", click "New Terminal"). Type the following command in the terminal and replace `ab` with the letters in your username and press enter: 
 
 `$ ssh cs15lsp23ab@ieng6.ucsd.edu`
 
@@ -67,4 +67,14 @@ Here is a screenshot of a successful output:
 
 If you see this output in the termial, you have successfully connected remotely to the computer in the CSE Building basement. Now, the basement computers are _server_ and your computer is _client_. 
 
+You can exit the remote environment by Command or Ctrl + D, or you can type `exit` in the terminal. 
+
 ## Step 4: Running Different Commands
+In your remote environment, you can still use the commands you usually on your computer, such as `cd`, `ls`, and others. When you first connect to the remote environment, your `pwd` is `/home/linux/ieng6/cs15lsp23/cs15lsp23zzz`. `zzz` is the letters in your usernames.
+
+* You can view the list of files and folders using `ls`.
+![Image](ls.png)
+* You can view the list of **all** files using `ls -a`.
+![Image](ls -a.png)
+* You can move through directories using `cd <directory>`.
+* You can print the contents of a file using `cat`. 
