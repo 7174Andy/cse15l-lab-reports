@@ -8,3 +8,9 @@ Go to this website to set or reset your password for your CSE 15L account:
 First, log in with your UCSD email username and your student PID. Then, you will see "Additional Accounts" below your username. Click cs15l account, and you see a box saying: "Let's set the password for your account."
 
 ![Image](ResetPassword.png)
+
+Click "Global Password Change Tool" in the box and follow the instructions to change your set your password. 
+
+You are done setting up your CSE 15L Account!
+
+## Step 2: Install Visual Studio Code
