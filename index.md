@@ -4,7 +4,7 @@ This is how I created `StringServer` webpage.
 
 First I had to copy and paste the `Server.java` file from lab 2 Github repository. Then, I had to compile the `Server.java` file before compiling `StringSever.java`. 
 
-...
+```
 import java.io.IOException;
 import java.net.URI;
 
@@ -38,4 +38,4 @@ class StringServer {
         Server.start(port, new StringHandler());
     }
 }
-...
+```
