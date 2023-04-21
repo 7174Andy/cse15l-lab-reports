@@ -54,7 +54,17 @@ When the server starts new URIHandler called `StringHandler` is initiated. In th
 ### getQuery and getPath Methods
 Within the `StringHandler` class, `getQuery` and `getPath` methods are called. The `getQuery` takes no parameters but returns a string that the user types for query (after "?" in the URL). The `getPath` also takes no parameters and returns a string that the user type for path (after "/" but before "?" in the URL). 
 
-Becuase of thie request by the path `/add-message`, the string value of message is changed from no content to "hello" because the query has a string value of "hello" and the `handleRequest` method adds the value "hello" to the message field variable. 
+Becuase of thie request by the path `/add-message`, the string value of message is changed from no content to "hello" because the query has a string value of "hello" and the `handleRequest` method adds the value "hello" and "\n" to the empty message field variable. 
 
 ![Image](./Lab3/Second.png)
 
+### Start Method
+This time `start` method in the `Server` class is not called because the server is already on.
+
+### handleRequest Method
+Again, the `handleRequest` method is called in the `ServerHttpHandler` class when running the webpage. This method takes URI, which is a url of the webpage. The if statement determines the path of the webpage and display the right output of the webpage. The `String` value of `message` field variable in the `StringHandler` changes during the method call. 
+
+### getQuery and getPath Methods
+Within the `StringHandler` class, `getQuery` and `getPath` methods are called. Both methods do not take parameters. 
+
+Becuase of thie request by the path `/add-message`, the string value of message is changed from "hello" to "hello\nHow are you" because the query has a string value of "How are you" and the `handleRequest` method adds the value "How are you" and "\n" to the message field variable. 
