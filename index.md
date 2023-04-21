@@ -71,7 +71,29 @@ Becuase of thie request by the path `/add-message`, the string value of message 
 
 
 # Part 2
+`ListExamples` file is chosen for bug analysis. 
 
+## Failure-inducing Input
+When the parameter ArrayList has a length of greater than 1, there is a symptom of the bug. The elements in the returned ArrayList are not sorted as it is sorted in the original ArrayList that is taken as a parameter. 
+
+```
+@Test
+public void testFilter() {
+    StringChecker sc = new StringChecker() {
+        public boolean checkString(String s) {
+            return s.contains("a");
+        }
+    };
+
+    ArrayList<String> list = new ArrayList<String>(
+            Arrays.asList("apple", "beer", "car", "date", "egg", "fish", "grape"));
+
+    ArrayList<String> expected = new ArrayList<String>(Arrays.asList("apple", "car", "date", "grape"));
+
+    assertEquals(expected, ListExamples.filter(list, sc));
+}
+```
+This test creates a failure, indicating a bug in the code in the `filter` method. 
 
 # Part 3
 During the lab 2 and 3, I learned and took away numerous contents related to coding. Although I had some prior experience with Java before, I did not expect that Java can make webpages. Lab 2 facilitated me to learn more about the codes and logics to make a simple website with different queries and paths. 
