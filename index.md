@@ -68,3 +68,10 @@ Again, the `handleRequest` method is called in the `ServerHttpHandler` class whe
 Within the `StringHandler` class, `getQuery` and `getPath` methods are called. Both methods do not take parameters. 
 
 Becuase of thie request by the path `/add-message`, the string value of message is changed from "hello" to "hello\nHow are you" because the query has a string value of "How are you" and the `handleRequest` method adds the value "How are you" and "\n" to the message field variable. 
+
+
+# Part 2
+
+
+# Part 3
+During the lab 2 and 3, I learned and took away numerous contents related to coding. Although I had some prior experience with Java before, I did not expect that Java can make webpages. Lab 2 facilitated me to learn more about the codes and logics to make a simple website with different queries and paths. 
