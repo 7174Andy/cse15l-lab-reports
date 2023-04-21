@@ -98,8 +98,6 @@ When the parameter ArrayList has a length of greater than 1, there is a symptom 
 
 ![Image](./Lab3/FirstError.png)
 
-![Image](./Lab3/FirstPass.png)
-
 The input of ArrayList named `failedList` test creates a failure, indicating a bug in the code in the `filter` method. 
 
 On the other hand, the input ArrayList with only one element works as expected. In other words, the elements that satiates the conditions of the `StringChecker` object in the paramter ArrayList is sorted the same way as the original ArrayList. 
@@ -129,6 +127,8 @@ On the other hand, the input ArrayList with only one element works as expected. 
     return result;
   }
 ```
+![Image](./Lab3/FirstPass.png)
+
 I deleted 0 as a paramter for the add method in the for loop. Before I fixed the code, each time the if statement finds the element that satisfies the `StringChecker` conditions, the element is added to the 0th index of the result ArrayList. This makes a result ArrayList with elements that satiate the condition in the `StringChecker` object in reverse order. Therefore, by not taking 0 as the first parameter in the add method, the element is added at the end of the ArrayList. 
 
 ## Merge Method
