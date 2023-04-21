@@ -98,6 +98,8 @@ When the parameter ArrayList has a length of greater than 1, there is a symptom 
 
 ![Image](./Lab3/FirstError.png)
 
+![Image](./Lab3/FirstPass.png)
+
 The input of ArrayList named `failedList` test creates a failure, indicating a bug in the code in the `filter` method. 
 
 On the other hand, the input ArrayList with only one element works as expected. In other words, the elements that satiates the conditions of the `StringChecker` object in the paramter ArrayList is sorted the same way as the original ArrayList. 
@@ -130,8 +132,6 @@ On the other hand, the input ArrayList with only one element works as expected. 
 I deleted 0 as a paramter for the add method in the for loop. Before I fixed the code, each time the if statement finds the element that satisfies the `StringChecker` conditions, the element is added to the 0th index of the result ArrayList. This makes a result ArrayList with elements that satiate the condition in the `StringChecker` object in reverse order. Therefore, by not taking 0 as the first parameter in the add method, the element is added at the end of the ArrayList. 
 
 ## Merge Method
-
-![Image](./Lab3/FirstPass.png)
 
 # Part 3
 During the lab 2 and 3, I learned and took away numerous contents related to coding. Although I had some prior experience with Java before, I did not expect that Java can make webpages. Lab 2 facilitated me to learn more about the codes and logics to make a simple website with different queries and paths. 
