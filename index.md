@@ -52,8 +52,9 @@ When the website is started, the main method in the StringServer class, and the 
 When the server starts new URIHandler called `StringHandler` is initiated. In this class, `handleRequest` method is called in the `ServerHttpHandler` class when running the webpage. This method takes URI, which is a url of the webpage. The if statement determines the path of the webpage and display the right output of the webpage. The `String` value of `message` field variable in the `StringHandler` class stores the query of string value that the user typed after "localhost:4000/add-message" (4000 is the port number that I chose). 
 
 ### getQuery and getPath Methods
-Within the `StringHandler` method, `getQuery` and `getPath` methods are called. The `getQuery` takes no parameters but returns a string that the user types for query (after "?" in the URL). The `getPath` also takes no parameters and returns a string that the user type for path (after "/" but before "?" in the URL). 
+Within the `StringHandler` class, `getQuery` and `getPath` methods are called. The `getQuery` takes no parameters but returns a string that the user types for query (after "?" in the URL). The `getPath` also takes no parameters and returns a string that the user type for path (after "/" but before "?" in the URL). 
 
-Becuase of thie request by the path `/add-message`, the string value of message is changed from no content to "hello". 
+Becuase of thie request by the path `/add-message`, the string value of message is changed from no content to "hello" because the query has a string value of "hello" and the `handleRequest` method adds the value "hello" to the message field variable. 
 
 ![Image](./Lab3/Second.png)
+
