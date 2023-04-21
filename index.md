@@ -133,5 +133,24 @@ I deleted 0 as a paramter for the add method in the for loop. Before I fixed the
 
 ## Merge Method
 
+```
+    @Test
+    public void testMerge() {
+        ArrayList<String> list1 = new ArrayList<String>(Arrays.asList("a", "b", "c", "d"));
+        ArrayList<String> list2 = new ArrayList<>();
+        list2.add("b");
+        list2.add("c");
+        list2.add("d");
+        ArrayList<String> expected = new ArrayList<String>(Arrays.asList("a", "b", "b", "c", "c", "d", "d"));
+        assertEquals(expected, ListExamples.merge(list1, list2));
+
+        ArrayList<String> list3 = new ArrayList<String>(Arrays.asList("a"));
+        ArrayList<String> list4 = new ArrayList<String>(Arrays.asList("b"));
+        ArrayList<String> expected2 = new ArrayList<String>(Arrays.asList("a", "b"));
+        assertEquals(expected2, ListExamples.merge(list3, list4));
+    }
+```
+![Image](./Lab3/SecondError.png)
+
 # Part 3
 During the lab 2 and 3, I learned and took away numerous contents related to coding. Although I had some prior experience with Java before, I did not expect that Java can make webpages. Lab 2 facilitated me to learn more about the codes and logics to make a simple website with different queries and paths. 
