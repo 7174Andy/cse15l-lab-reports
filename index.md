@@ -73,27 +73,65 @@ Becuase of thie request by the path `/add-message`, the string value of message 
 # Part 2
 `ListExamples` file is chosen for bug analysis. 
 
-## Failure-inducing Input
+## Filter Method
 When the parameter ArrayList has a length of greater than 1, there is a symptom of the bug. The elements in the returned ArrayList are not sorted as it is sorted in the original ArrayList that is taken as a parameter. 
 
 ```
-@Test
-public void testFilter() {
-    StringChecker sc = new StringChecker() {
-        public boolean checkString(String s) {
-            return s.contains("a");
-        }
-    };
+    @Test
+    public void testFilter() {
+        StringChecker sc = new StringChecker() {
+            public boolean checkString(String s) {
+                return s.contains("a");
+            }
+        };
 
-    ArrayList<String> list = new ArrayList<String>(
-            Arrays.asList("apple", "beer", "car", "date", "egg", "fish", "grape"));
+        ArrayList<String> failedList = new ArrayList<String>(
+                Arrays.asList("apple", "beer", "car", "date", "egg", "fish", "grape"));
+        ArrayList<String> expected = new ArrayList<String>(Arrays.asList("apple", "car", "date", "grape"));
+        assertEquals(expected, ListExamples.filter(failedList, sc));
 
-    ArrayList<String> expected = new ArrayList<String>(Arrays.asList("apple", "car", "date", "grape"));
-
-    assertEquals(expected, ListExamples.filter(list, sc));
-}
+        ArrayList<String> workingList = new ArrayList<String>(Arrays.asList("apple"));
+        ArrayList<String> expected2 = new ArrayList<>(Arrays.asList("apple"));
+        assertEquals(expected2, ListExamples.filter(workingList, sc));
+    }
 ```
-This test creates a failure, indicating a bug in the code in the `filter` method. 
+
+![Image](./Lab3/FirstError.png)
+
+The input of ArrayList named `failedList` test creates a failure, indicating a bug in the code in the `filter` method. 
+
+On the other hand, the input ArrayList with only one element works as expected. In other words, the elements that satiates the conditions of the `StringChecker` object in the paramter ArrayList is sorted the same way as the original ArrayList. 
+
+### Before fixing the bug
+```
+  static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for (String s : list) {
+      if (sc.checkString(s)) {
+        result.add(0, s);
+      }
+    }
+    return result;
+  }
+```
+
+### After fixing the bug
+```
+  static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for (String s : list) {
+      if (sc.checkString(s)) {
+        result.add(s);
+      }
+    }
+    return result;
+  }
+```
+I deleted 0 as a paramter for the add method in the for loop. Before I fixed the code, each time the if statement finds the element that satisfies the `StringChecker` conditions, the element is added to the 0th index of the result ArrayList. This makes a result ArrayList with elements that satiate the condition in the `StringChecker` object in reverse order. Therefore, by not taking 0 as the first parameter in the add method, the element is added at the end of the ArrayList. 
+
+## Merge Method
+
+![Image](./Lab3/FirstPass.png)
 
 # Part 3
 During the lab 2 and 3, I learned and took away numerous contents related to coding. Although I had some prior experience with Java before, I did not expect that Java can make webpages. Lab 2 facilitated me to learn more about the codes and logics to make a simple website with different queries and paths. 
