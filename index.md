@@ -144,19 +144,17 @@ I deleted 0 as a paramter for the add method in the for loop. Before I fixed the
         ArrayList<String> expected = new ArrayList<String>(Arrays.asList("a", "b", "b", "c", "c", "d", "d"));
         assertEquals(expected, ListExamples.merge(list1, list2));
 
-        ArrayList<String> list3 = new ArrayList<String>(Arrays.asList("a"));
-        ArrayList<String> list4 = new ArrayList<String>(Arrays.asList("b"));
-        ArrayList<String> expected2 = new ArrayList<String>(Arrays.asList("a", "b"));
-        assertEquals(expected2, ListExamples.merge(list3, list4));
-
-        ArrayList<String> list5 = new ArrayList<String>(Arrays.asList("a", "b", "c", "d"));
-        ArrayList<String> expected3 = new ArrayList<String>(Arrays.asList("a", "a", "b", "c", "d"));
+        ArrayList<String> list3 = new ArrayList<String>(Arrays.asList("a", "b"));
+        ArrayList<String> list5 = new ArrayList<String>();
+        list5.add("d");
+        list5.add("e");
+        ArrayList<String> expected3 = new ArrayList<String>(Arrays.asList("a", "b", "d", "e"));
         assertEquals(expected3, ListExamples.merge(list3, list5));
     }
 ```
 ![Image](./Lab3/SecondError.png)
 
-If I try to merge two ArrayLists, one of which has only one element, there is an OutOfMemoryError, which means too many elements are added to the result ArrayList. 
+When one of the lists that are taken as parameters has an element of less than or equal to two, the program throws an OutOfMemory Error. 
 
 ### Before fixing the bug
 ```
@@ -185,6 +183,9 @@ If I try to merge two ArrayLists, one of which has only one element, there is an
 ```
 
 ### After fixing the bug
+```
+
+```
 
 # Part 3
 During the lab 2 and 3, I learned and took away numerous contents related to coding. Although I had some prior experience with Java before, I did not expect that Java can make webpages. Lab 2 facilitated me to learn more about the codes and logics to make a simple website with different queries and paths. 
