@@ -148,9 +148,43 @@ I deleted 0 as a paramter for the add method in the for loop. Before I fixed the
         ArrayList<String> list4 = new ArrayList<String>(Arrays.asList("b"));
         ArrayList<String> expected2 = new ArrayList<String>(Arrays.asList("a", "b"));
         assertEquals(expected2, ListExamples.merge(list3, list4));
+
+        ArrayList<String> list5 = new ArrayList<String>(Arrays.asList("a", "b", "c", "d"));
+        ArrayList<String> expected3 = new ArrayList<String>(Arrays.asList("a", "a", "b", "c", "d"));
+        assertEquals(expected3, ListExamples.merge(list3, list5));
     }
 ```
 ![Image](./Lab3/SecondError.png)
+
+If I try to merge two ArrayLists, one of which has only one element, there is an OutOfMemoryError, which means too many elements are added to the result ArrayList. 
+
+### Before fixing the bug
+```
+ static List<String> merge(List<String> list1, List<String> list2) {
+    List<String> result = new ArrayList<>();
+    int index1 = 0, index2 = 0;
+    while (index1 < list1.size() && index2 < list2.size()) {
+      if (list1.get(index1).compareTo(list2.get(index2)) < 0) {
+        result.add(list1.get(index1));
+        index1 += 1;
+      } else {
+        result.add(list2.get(index2));
+        index2 += 1;
+      }
+    }
+    while (index1 < list1.size()) {
+      result.add(list1.get(index1));
+      index1 += 1;
+    }
+    while (index2 < list2.size()) {
+      result.add(list2.get(index2));
+      index1 += 1;
+    }
+    return result;
+  }
+```
+
+### After fixing the bug
 
 # Part 3
 During the lab 2 and 3, I learned and took away numerous contents related to coding. Although I had some prior experience with Java before, I did not expect that Java can make webpages. Lab 2 facilitated me to learn more about the codes and logics to make a simple website with different queries and paths. 
