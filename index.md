@@ -120,3 +120,5 @@ grep -C 5 "F-15" technical/911report/chapter-1.txt
 This command finds the word "F-15" in a `technical/911report/chapter-1.txt` file and prints 5 lines after and before the line where the word occurs.
 
 ![image](./Lab5//Five%20Lines%20in%20Single%20File.png)
+
+> Source: ChatGPT
