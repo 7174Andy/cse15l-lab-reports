@@ -74,6 +74,8 @@ This command looks for the word "Jewish" in all the files in all the subdirector
 
 ## -C Flag with number
 
+### Example 1
+
 ```
 grep -C 5 "Jewish" technical/biomed/*.txt
 ```
@@ -81,6 +83,8 @@ grep -C 5 "Jewish" technical/biomed/*.txt
 The command looks for the word "Jewish" in all the text files in the `technical/biomed/` directory and then prints 5 lines before and after the word occurs in the text file.
 
 ![image](./Lab5/five%20lines.png)
+
+### Example 2
 
 ```
 
