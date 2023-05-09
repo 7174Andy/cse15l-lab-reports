@@ -47,3 +47,23 @@ grep -n "RIPA" technical/biomed/*.txt
 The command above finds the word `"RIPA"` in all the text files in the `technical/biomed/` directory and shows the line number where the word occurs in each file.
 
 ![image](./Lab5/Line%20Number%20Multiple.png)
+
+## -r Flag
+
+```
+grep -r "word" directory
+```
+
+This line of command searches for the word in all files in the directory and its subdirectories recursively.
+
+```
+grep -r "RIPA" technical/biomed/
+```
+
+This command looks for the word "RIPA" in all the files in the `technical/biomed/` directory recursively and prints all the directories that contains the word.
+
+![image](./Lab5/Recursive%201.png)
+
+```
+
+```
