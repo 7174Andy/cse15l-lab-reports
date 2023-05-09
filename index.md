@@ -65,5 +65,11 @@ This command looks for the word "RIPA" in all the files in the `technical/biomed
 ![image](./Lab5/Recursive%201.png)
 
 ```
-
+stringsearch-data % grep -r "Jewish" technical
 ```
+
+This command looks for the word "Jewish" in all the files in all the subdirectories in the `/technical/` directory and prints all the directories where the word occurs.
+
+![image](./Lab5/Recursive%202.png)
+
+##
