@@ -2,11 +2,15 @@
 
 ## -c Flag
 
+### Definition
+
 ```
 grep -c "word" filename
 ```
 
 This line of command counts the occurence of the `word` in the file.
+
+### Example 1
 
 ```
 grep -c "9/11" technical/911report/chapter-1.txt
@@ -15,6 +19,8 @@ grep -c "9/11" technical/911report/chapter-1.txt
 This line of command counts the occurence of the `9/11` in the `chapter-1.txt` in the `technical/911report/` directory. The output of this command is:
 
 ![Image](./Lab5//FInd%20Word%20Single.png)
+
+### Example 2
 
 ```
 rep -c "9/11" technical/911report/*.txt
@@ -26,11 +32,15 @@ This line of command counts the occurence of the `9/11` in all of the text files
 
 ## -n Flag
 
+### Definition
+
 ```
 grep -n "word" filename
 ```
 
 This line of command shows the number of line where the `word` given as input exists in the file of the `filename`.
+
+### Example 1
 
 ```
 grep -n "study" technical/biomed/1468-6708-3-1.txt
@@ -39,6 +49,8 @@ grep -n "study" technical/biomed/1468-6708-3-1.txt
 The command above finds the word `study` in the `1468-6708-3-1.txt` file in the `technical/biomed/` directory and shows the line number where the word occurs in that file.
 
 ![image](./Lab5/Line%20Number%20Singular.png)
+
+### Example 2
 
 ```
 grep -n "RIPA" technical/biomed/*.txt
@@ -50,11 +62,15 @@ The command above finds the word `"RIPA"` in all the text files in the `technica
 
 ## -r Flag
 
+### Definition
+
 ```
 grep -r "word" directory
 ```
 
 This line of command searches for the word in all files in the directory and its subdirectories recursively.
+
+### Example 1
 
 ```
 grep -r "RIPA" technical/biomed/
@@ -63,6 +79,8 @@ grep -r "RIPA" technical/biomed/
 This command looks for the word "RIPA" in all the files in the `technical/biomed/` directory recursively and prints all the directories that contains the word.
 
 ![image](./Lab5/Recursive%201.png)
+
+### Example 2
 
 ```
 stringsearch-data % grep -r "Jewish" technical
@@ -74,10 +92,19 @@ This command looks for the word "Jewish" in all the files in all the subdirector
 
 ## -C Flag with number
 
+### Definition
+
+```
+grep -C <n> "word" filename
+```
+
+This command prints n number of lines before and after the line where the word occurs in the filename.
+
 ### Example 1
 
 ```
-grep -C 5 "Jewish" technical/biomed/*.txt
+grep -C 5 "Jewish" technical/biomed/\*.txt
+
 ```
 
 The command looks for the word "Jewish" in all the text files in the `technical/biomed/` directory and then prints 5 lines before and after the word occurs in the text file.
@@ -87,5 +114,9 @@ The command looks for the word "Jewish" in all the text files in the `technical/
 ### Example 2
 
 ```
-
+grep -C 5 "F-15" technical/911report/chapter-1.txt
 ```
+
+This command finds the word "F-15" in a `technical/911report/chapter-1.txt` file and prints 5 lines after and before the line where the word occurs.
+
+![image](./Lab5//Five%20Lines%20in%20Single%20File.png)
