@@ -39,3 +39,11 @@ grep -n "study" technical/biomed/1468-6708-3-1.txt
 The command above finds the word `study` in the `1468-6708-3-1.txt` file in the `technical/biomed/` directory and shows the line number where the word occurs in that file.
 
 ![image](./Lab5/Line%20Number%20Singular.png)
+
+```
+grep -n "RIPA" technical/biomed/*.txt
+```
+
+The command above finds the word `"RIPA"` in all the text files in the `technical/biomed/` directory and shows the line number where the word occurs in each file.
+
+![image](./Lab5/Line%20Number%20Multiple.png)
