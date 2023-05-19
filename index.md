@@ -30,6 +30,9 @@ This line of command counts the occurence of the `9/11` in all of the text files
 
 ![image](./Lab5/Screenshot%202023-05-08%20at%2021.28.49.png)
 
+> Source: Chat GPT
+> [Link](https://7174andy.github.io/cse15l-lab-reports/#chat-gpt)
+
 ## -n Flag
 
 ### Definition
@@ -59,6 +62,9 @@ grep -n "RIPA" technical/biomed/*.txt
 The command above finds the word `"RIPA"` in all the text files in the `technical/biomed/` directory and shows the line number where the word occurs in each file.
 
 ![image](./Lab5/Line%20Number%20Multiple.png)
+
+> Source: Chat GPT
+> [Link](https://7174andy.github.io/cse15l-lab-reports/#chat-gpt)
 
 ## -r Flag
 
@@ -90,6 +96,9 @@ This command looks for the word "Jewish" in all the files in all the subdirector
 
 ![image](./Lab5/Recursive%202.png)
 
+> Source: Chat GPT
+> [Link](https://7174andy.github.io/cse15l-lab-reports/#chat-gpt)
+
 ## -C Flag with number
 
 ### Definition
@@ -120,6 +129,9 @@ grep -C 5 "F-15" technical/911report/chapter-1.txt
 This command finds the word "F-15" in a `technical/911report/chapter-1.txt` file and prints 5 lines after and before the line where the word occurs.
 
 ![image](./Lab5//Five%20Lines%20in%20Single%20File.png)
+
+> Source: Chat GPT
+> [Link](https://7174andy.github.io/cse15l-lab-reports/#chat-gpt)
 
 # Work Cited
 
