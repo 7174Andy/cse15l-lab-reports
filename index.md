@@ -121,4 +121,76 @@ This command finds the word "F-15" in a `technical/911report/chapter-1.txt` file
 
 ![image](./Lab5//Five%20Lines%20in%20Single%20File.png)
 
-> Source: ChatGPT
+# Work Cited
+
+## Chat GPT
+
+The prompt that I gave to Chat GPT:
+
+> What are some interesting commands using grep command?
+
+Then, ChatGPT gave me this response:
+
+Grep is a powerful command-line tool used for searching plain text files for specific patterns. Here are some interesting commands using grep:
+
+1. Search for a word in a file:
+
+   ```
+   grep "word" filename
+   ```
+
+2. Search for a word in multiple files:
+
+   ```
+   grep "word" file1 file2 file3
+   ```
+
+3. Search for a word in all files in a directory and its subdirectories:
+
+   ```
+   grep -r "word" directory
+   ```
+
+4. Search for a word in all files with a certain file extension:
+
+   ```
+   grep "word" *.txt
+   ```
+
+5. Search for a word but ignore the case:
+
+   ```
+   grep -i "word" filename
+   ```
+
+6. Search for a word and show the line number where it occurs:
+
+   ```
+   grep -n "word" filename
+   ```
+
+7. Search for a word and show the lines before and after it:
+
+   ```
+   grep -C 3 "word" filename
+   ```
+
+8. Search for a word and count the number of occurrences:
+
+   ```
+   grep -c "word" filename
+   ```
+
+9. Search for lines that match a regular expression pattern:
+
+   ```
+   grep "pattern" filename
+   ```
+
+10. Search for lines that do not match a regular expression pattern:
+
+```
+grep -v "pattern" filename
+```
+
+I chose three interesting implementation examples of `grep` from the response. Additionally, I did not regenerate response from Chat GPT after this prompt.
