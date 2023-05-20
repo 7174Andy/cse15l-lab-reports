@@ -79,6 +79,26 @@ Exit vim by pressing `:` and `w` and `q` to save and exit vim
 
 > output after typing `:wq`
 
-### Step 5: Run the tests, demonstrating that they now succeed
+## Step 5: Run the tests, demonstrating that they now succeed
 
 Then, I type `bash t` and `<tab>` and type `<enter>`
+
+![image](./Lab7/test2.png)
+
+> output after `bash test.sh` + `<enter>`
+
+The output indicates that the tests have passed.
+
+## Step 6: Commit and push the resulting change to your Github account
+
+Type this set of commands:
+
+```
+git add .
+git commit -m "Debugging"
+git push
+```
+
+![image](./Lab7/git%20push.png)
+
+> output after typing the set of command lines
