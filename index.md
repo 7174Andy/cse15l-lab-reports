@@ -22,4 +22,16 @@ The input of the test method in [Lab 3](https://github.com/ucsd-cse15l-w23/lab3)
 
 ## Response from the TA
 
+### Analysis of the Terminal Output
+
 The terminal indicates that the one of the elements of the expected and actual array are different. The element was expected to be 5 but the actual element is 0. Since your expected array indicates that the 5 is your 0th index, there is an unexpected output from 0th index.
+
+### Analysis of the Code of Your Method
+
+You created a new integer array. Then, you implemented the for loop (to my understanding) intended to traverse through the input array and assign the new array with values in reversed order. However, you are actually assigning values to the input array. In other words, your code is doing nothing to the new array that you created to store the reversed order values. Additionally, since your new array `newArray` is empty, the array only contains 0 because 0 is the default values. Therefore, your `arr`, the input array, will be an array with 0s in all indices.
+
+### Debug
+
+Since you should return the new array, according to the comment above your method. I would return the `newArray`, instead of `arr`.
+
+![img](./Lab%209/step1.png)
