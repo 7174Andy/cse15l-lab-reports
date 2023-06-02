@@ -46,3 +46,5 @@ The bug is fixed!
 ![img](./Lab%209/fixed.png)
 
 # Reflection
+
+After the first Skill Demonstration, I thought that there would be nothing to learn in this course. However, I was definitely wrong: There are much more to learn and experience in this course, such as writing a bash commands in sh file and in java file and editing a file using Vim. In the labs, it was fun to explore and experience those unknown world of terminal implementation. Furthermore, the skills learned in this course will definitely be very helpful in my potential job or in my life of coding.
