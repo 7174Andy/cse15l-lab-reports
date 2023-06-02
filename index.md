@@ -35,3 +35,14 @@ You created a new integer array. Then, you implemented the for loop (to my under
 Since you should return the new array, according to the comment above your method. I would return the `newArray`, instead of `arr`.
 
 ![img](./Lab%209/step1.png)
+This will return the `newArray`
+
+Now, you should assign the values in `arr` to the `newArray` in the reversed order by doing this:
+![img](./Lab%209/step2.png)
+
+This way, each element in `newArray` is assigned to the corresponding element in `arr` in reversed order.
+
+The bug is fixed!
+![img](./Lab%209/fixed.png)
+
+# Reflection
